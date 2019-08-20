@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/noteslogo"
+        android:layout_width="56dp"
+        android:layout_height="73dp"
+        android:src="@drawable/ic_note_black_24dp"
+        />
+    <TextView
+        android:id="@+id/titleone"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/noteslogo"
+        android:layout_width="70dp"
+        android:hint="Title"
+        android:textColorHint="@android:color/black"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/titleotwo"
+        android:layout_below="@id/titleone"
+        android:layout_width="80dp"
+        android:hint="Description"
+        android:textColorHint="@android:color/black"
+        android:layout_height="40dp" />
+
+
+</RelativeLayout>

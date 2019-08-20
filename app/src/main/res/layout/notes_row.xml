@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relativeone"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#006cb5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Activity Below"
+            android:layout_centerInParent="true"
+            android:textSize="25dp"/>
+        <ImageView
+            android:id="@+id/imageone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativetwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeone">
+        <EditText
+            android:id="@+id/notestitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TITLE"/>
+        <EditText
+            android:id="@+id/notesdesc"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/notestitle"
+            android:hint="DESCRIPTION"
+            android:gravity="start"/>
+        <Button
+            android:id="@+id/save"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/notesdesc"
+            android:background="#006cb5"
+            android:hint="SAVE"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

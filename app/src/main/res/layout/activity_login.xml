@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <ImageView
+        android:id="@+id/Loginlogo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/ic_person_pin_black_24dp" />
+
+    <EditText
+        android:id="@+id/Loginusername"
+        android:layout_width="500dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/Loginlogo"
+        android:layout_marginTop="60dp"
+        android:hint="USERNAME"
+        android:background="@android:color/white"
+        android:textColorHint="@android:color/black"/>
+    <EditText
+        android:id="@+id/Loginpassword"
+        android:layout_width="600dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/Loginusername"
+        android:layout_marginTop="40dp"
+        android:hint="PASSWORD"
+        android:background="@android:color/white"
+        android:textColorHint="@android:color/black"/>
+    <Button
+        android:id="@+id/userlogin"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/Loginpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="LOGIN"
+        android:background="@android:color/white"
+        android:textColorHint="@android:color/black"
+
+        />
+    <Button
+        android:id="@+id/usersignup"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/userlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="SIGNUP"
+        android:background="@android:color/white"
+        android:textColorHint="@android:color/black"/>
+
+
+</RelativeLayout>
